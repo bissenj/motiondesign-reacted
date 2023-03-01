@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import VirtueDemo from '../components/Virtue'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,7 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
+
+        <div style={{padding: '40px 120px', position: 'relative', overflow: 'hidden', backgroundColor: '#9a9a97'}}>
+          <VirtueDemo></VirtueDemo>
+        </div>
+
+        {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.js</code>
@@ -37,9 +44,9 @@ export default function Home() {
               />
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.center}>
+        {/* <div className={styles.center}>
           <Image
             className={styles.logo}
             src="/next.svg"
@@ -57,9 +64,9 @@ export default function Home() {
               priority
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
@@ -116,7 +123,7 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
     </>
   )
